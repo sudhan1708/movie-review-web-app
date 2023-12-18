@@ -1,0 +1,62 @@
+.movie-carousel-container{
+   width: 100vw; 
+   height: 100vh;
+   background-color: black;
+}
+
+.movie-card-container{
+    height: 550px;
+    background-color: black;
+    color: white;
+}  
+
+.movie-card{
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1)), var(--img);
+}
+
+.movie-detail{
+    position: absolute;
+    top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.movie-poster{
+    height: 300px;
+    border: 1px solid gold;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.movie-poster > img{
+    height: 100%;
+    width: 100%;
+}
+
+.play-button-icon-container{
+    width: 200px;
+}
+
+.play-button-icon {
+   font-size: 3rem;
+   color: gold;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+.play-button-icon:hover {
+    font-size: 4rem;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .movie-detail{
+        flex-direction: column;
+        top: 100px;
+    }
+} 
